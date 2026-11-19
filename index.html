@@ -1,11 +1,34 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trang web của tôi</title>
-    <h1>hello
-</h1>
-    <!-- Thêm dòng này để kết nối file CSS -->
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lưu đánh dấu & Note</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
+<body class="polka-dot-background">
+  <main class="container">
+    <h1>Danh sách đánh dấu & Ghi chú</h1>
+
+    <div class="item" data-id="muc-1">
+      <label class="row">
+        <input type="checkbox" class="mark-cb" />
+        <strong>Mục 1: Ôn tập kiến thức</strong>
+      </label>
+      <textarea class="note-input" rows="2" placeholder="Viết note của bạn tại đây..."></textarea>
+    </div>
+
+    <div class="item" data-id="muc-2">
+      <label class="row">
+        <input type="checkbox" class="mark-cb" />
+        <strong>Mục 2: Kiểm tra giao diện</strong>
+      </label>
+      <textarea class="note-input" rows="2" placeholder="Viết note của bạn tại đây..."></textarea>
+    </div>
+
+    <button type="button" id="clear-btn" class="clear-btn">Xóa toàn bộ dữ liệu đã lưu</button>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

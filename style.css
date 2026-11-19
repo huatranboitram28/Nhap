@@ -1,6 +1,63 @@
 .polka-dot-background {
-  background-color: #f7f3ee;
-  background-image: radial-gradient(circle, #ffd1dc 8px, transparent 8px);
-  background-size: 40px 40px;
-  background-position: -20px -20px;
+  background-color: #f8f9fa;
+  background-image: radial-gradient(#d0d7de 1.25px, transparent 1.25px);
+  background-size: 20px 20px;
+  min-height: 100vh;
+  margin: 0;
+  padding: 24px;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.container {
+  max-width: 640px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+}
+
+.item {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  background: #fff;
+  transition: background-color 0.15s ease, border-color 0.15s ease;
+}
+
+.item.marked {
+  background-color: #fff3bf;
+  border-color: #f59f00;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.note-input {
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 8px;
+  padding: 8px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-family: inherit;
+  resize: vertical;
+}
+
+.clear-btn {
+  padding: 8px 14px;
+  border: 1px solid #ef4444;
+  background: #fff;
+  color: #dc2626;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.clear-btn:hover {
+  background: #fef2f2;
 }
